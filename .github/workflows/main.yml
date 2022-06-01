@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     
 jobs:
-  build_and_deploy_functions_uat:
+  Build and deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
