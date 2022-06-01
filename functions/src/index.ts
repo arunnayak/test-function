@@ -5,5 +5,6 @@ import * as functions from "firebase-functions";
 
 export const helloWorld = functions.https.onRequest((request, response) => {
   functions.logger.info("Hello logs!", {structuredData: true});
-  response.send("Hello from Firebase!");
+  const env = process.env.DAY_OF_WEEK;
+  response.send(`Hello from Firebase! > ${env}`);
 });
