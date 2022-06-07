@@ -18,6 +18,6 @@ jobs:
           npm ci
           npm install firebase-tools
       - name: Deploy to Firebase
-        run: pwd && npm run deploy:dev
+        run: cd functions && pwd && npm run deploy:dev
         env:
           FIREBASE_TOKEN: "1//0g2eerzI4IFMqCgYIARAAGBASNwF-L9IrrSui-UCkwvdPb5bsvyfzs0eVUij4bsI40BJaeY2Xl2rj8sL0WcpqdYeNbQg8OB8RlUg"
