@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "grocers-4c903"
+    "default": "grocers-4c903",
+    "dev": "grocers-4c903",
+    "uat": "grocers-4c903"
   }
 }
